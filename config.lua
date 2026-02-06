@@ -1,4 +1,3 @@
-reload('user.telescope')
 reload('user.treesitter')
 reload('user.icons')
 reload('user.lualine')
@@ -11,6 +10,7 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "everforest"
 lvim.leader = "space"
+lvim.keys.normal_mode["<leader>e"] = ":NvimTreeToggle<CR>"
 
 
 lvim.builtin.alpha.active = true
@@ -23,4 +23,7 @@ lvim.builtin.terminal.direction = "horizontal"
 lvim.reload_config_on_save = true
 lvim.builtin.breadcrumbs.active = true
 lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.treesitter.indent.enable = false
+lvim.builtin.indentlines.active = false
 lvim.builtin.dap.active = true
+lvim.builtin.nvimtree.active = true
